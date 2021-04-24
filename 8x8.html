@@ -1,0 +1,288 @@
+<!--
+    table td 8X8
+-->
+
+<html>
+    <h1>Ubyte LED Tools</h1>
+    <body>
+    <div class="ledMatrix">
+    <h1><u>8x8 generator</u></h1>
+    <table >
+        <tbody>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b>P2 result</b></td>
+            </tr>
+        <tr>
+            <td id='0,0' class='led on'></td>
+            <td id='0,1' class='led on'></td>
+            <td id='0,2' class='led on'></td>
+            <td id='0,3' class='led on'></td>
+            <td id='0,4' class='led on'></td>
+            <td id='0,5' class='led on'></td>
+            <td id='0,6' class='led on'></td>
+            <td id='0,7' class='led on'></td>
+            <td id='res0' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='1,0' class='led on'></td>
+            <td id='1,1' class='led on'></td>
+            <td id='1,2' class='led on'></td>
+            <td id='1,3' class='led on'></td>
+            <td id='1,4' class='led on'></td>
+            <td id='1,5' class='led on'></td>
+            <td id='1,6' class='led on'></td>
+            <td id='1,7' class='led on'></td>
+            <td id='res1' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='2,0' class='led on'></td>
+            <td id='2,1' class='led on'></td>
+            <td id='2,2' class='led on'></td>
+            <td id='2,3' class='led on'></td>
+            <td id='2,4' class='led on'></td>
+            <td id='2,5' class='led on'></td>
+            <td id='2,6' class='led on'></td>
+            <td id='2,7' class='led on'></td>
+            <td id='res2' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='3,0' class='led on'></td>
+            <td id='3,1' class='led on'></td>
+            <td id='3,2' class='led on'></td>
+            <td id='3,3' class='led on'></td>
+            <td id='3,4' class='led on'></td>
+            <td id='3,5' class='led on'></td>
+            <td id='3,6' class='led on'></td>
+            <td id='3,7' class='led on'></td>
+            <td id='res3' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='4,0' class='led on'></td>
+            <td id='4,1' class='led on'></td>
+            <td id='4,2' class='led on'></td>
+            <td id='4,3' class='led on'></td>
+            <td id='4,4' class='led on'></td>
+            <td id='4,5' class='led on'></td>
+            <td id='4,6' class='led on'></td>
+            <td id='4,7' class='led on'></td>
+            <td id='res4' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='5,0' class='led on'></td>
+            <td id='5,1' class='led on'></td>
+            <td id='5,2' class='led on'></td>
+            <td id='5,3' class='led on'></td>
+            <td id='5,4' class='led on'></td>
+            <td id='5,5' class='led on'></td>
+            <td id='5,6' class='led on'></td>
+            <td id='5,7' class='led on'></td>
+            <td id='res5' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='6,0' class='led on'></td>
+            <td id='6,1' class='led on'></td>
+            <td id='6,2' class='led on'></td>
+            <td id='6,3' class='led on'></td>
+            <td id='6,4' class='led on'></td>
+            <td id='6,5' class='led on'></td>
+            <td id='6,6' class='led on'></td>
+            <td id='6,7' class='led on'></td>
+            <td id='res6' class='res'>11111111</td>
+        </tr>
+        <tr>
+            <td id='7,0' class='led '></td>
+            <td id='7,1' class='led '></td>
+            <td id='7,2' class='led '></td>
+            <td id='7,3' class='led '></td>
+            <td id='7,4' class='led '></td>
+            <td id='7,5' class='led '></td>
+            <td id='7,6' class='led '></td>
+            <td id='7,7' class='led '></td>
+            <td id='res7' class='res'>00000000</td>
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <h2 id='p0'>P0:ff</h2>
+        <h3><u>8x8 matrix</u></h3>
+        <textarea id="mat_text"></textarea>
+        <button id="gen">Generate</button>
+        <button id="clear">Clear</button>
+        <button id="copy" onclick="copy()">Copy Code</button>
+    </div>
+</div>
+
+<div class="7seg">
+    <h1><u>8x8 generator</u></h1>
+    <table>
+        <tr>
+            <td id="a"></td>
+            <td id="a">A</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td id="f"></td>
+            <td id="">A</td>
+            <td id="b"></td>
+        </tr>
+        <tr>
+            <td id="f"></td>
+            <td id="">F</td>
+            <td id="b"></td>
+        </tr>
+        <tr>
+            <td id="f"></td>
+            <td id="a">A</td>
+            <td id="b"></td>
+        </tr>
+        <tr>
+            <td id="a"></td>
+            <td id="a">A</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td id="a"></td>
+            <td id="a">A</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td id="a"></td>
+            <td id="a">A</td>
+            <td id="a"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+
+<style>
+    .led {
+        width:40px;
+        height:40px;
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+    }
+    .on {
+        background-color:red;
+    }
+    .res {
+        width:100px;
+        height:40px;
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+    }
+    .ledMatrix
+    {
+        
+    }
+</style>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script>
+//8x8 array represent matrix
+var mat=[[],[],[],[],[],[],[],[]];
+var PO = [];
+var P2 = [];
+var out="";
+$('.led').removeClass('on');
+createMat();
+printMat()
+function printMat(){
+    out="";
+    var mat_text="{";
+    var row="";
+    var sum=0;
+    var p0="P0: "
+for (var i=0;i<mat.length;i++)
+{
+    mat_text+="\n{";
+    for(var j=0;j<mat.length;j++)
+    {
+        mat_text+=mat[i][j]+"";
+        if (j!=(mat.length-1))
+        {
+            mat_text+=",";
+        }
+        out+=" "+mat[i][j];
+        row+=" "+mat[i][j];
+        sum+=mat[i][j];
+        $('#res'+i).html(row);
+    }
+    mat_text+="},";
+    if (sum>0)
+        {
+            p0+='1';
+        }
+        else
+        {
+            p0+='0'
+        }
+    
+    sum=0;
+    row="";
+    out+="\n";
+}
+mat_text+="\n};";
+console.log(out);
+$('#mat_text').html(mat_text);
+$('#p0').html(p0);
+}
+//alert(out);
+function createMat()
+{
+$(".led").each(function() {
+var cell=this.id.split(","); //col,row
+//alert(cell[0]);
+var col=parseInt(cell[0],10);
+var row=parseInt(cell[1],10);
+if ($(this).hasClass("on"))
+{
+mat[col][row]=1
+//var t=$('#res'+col)
+//$('#res'+col).html(''+1);
+//console.log('res'+col);
+}
+else
+{
+    mat[col][row]=0
+    //$('#res'+col).html(''+0);
+}
+});
+}
+
+function copy() {
+  var copyText = $('#mat_text');
+  copyText.select(); 
+  //copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+
+//listeners
+    $('.led').click(function () {
+        if ($(this).hasClass('on')) {
+            $(this).removeClass('on');
+        } else {
+            $(this).addClass('on');
+        }
+        createMat();
+        printMat();
+    });
+    $('#clear').click(function () {
+    
+    $('.led').removeClass('on');
+       
+    });
+    $('#gen').click(function () {
+        createMat();
+        printMat();
+    });
+</script>
